@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::get('{username}','UsersController@show');
 
+Route::resource('sandbox', 'ZZZSandboxController');

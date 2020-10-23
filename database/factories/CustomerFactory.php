@@ -2,12 +2,11 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Tweet;
+use App\Customer;
 use Faker\Generator as Faker;
-use Illuminate\Support\Str;
 
-
-$factory->define(Tweet::class, function (Faker $faker) {
+$factory->define(Customer::class, function (Faker $faker) {
     return [
+        'name' => $faker->name,
     ];
 });

@@ -11,7 +11,7 @@ use Tests\TestCase;
 class ViewAnotherUsersTweetsTest extends TestCase
 {
     use DatabaseMigrations;
-    
+
     public function test_can_view_another_users_tweets()
     {
 
@@ -29,7 +29,7 @@ class ViewAnotherUsersTweetsTest extends TestCase
         $user->tweets()->save($tweet);
         //visit that users profile
         // $this->visit('/johndoe')
-       //// see their tweets
+        //// see their tweets
         // ->see('My First Tweet');
 
         $response = $this->get('/');
