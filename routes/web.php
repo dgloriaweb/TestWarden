@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('{username}','UsersController@show');
-
+Route::resource('users','UsersController');
+Route::resource('customers','CustomersController');
 Route::resource('sandbox', 'ZZZSandboxController');
